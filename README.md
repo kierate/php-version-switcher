@@ -1,4 +1,4 @@
-PHP location-specific version switcher.
+PHP location-specific version switcher
 ====================
 
 Based on the current path the script checks if the base directory contains a file telling it to use a different php version. These files are:
