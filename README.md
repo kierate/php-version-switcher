@@ -1,6 +1,8 @@
 PHP location-specific version switcher
 ====================
 
+This script allows you to execute a different version of PHP on the command line depending on your location on the filesystem.
+
 Based on the current path the script checks if the base directory contains a file telling it to use a different php version. These files are:
 - php52 - for PHP 5.2 from /usr/bin/php52/php
 - php53 - for PHP 5.3 from /usr/bin/php53/php
@@ -29,6 +31,6 @@ The paths to the actual versions on PHP that you have installed will also probab
 Usage
 -----
 
-Just call `php`. This will execute different versions of PHP depending where you are.
+Just call `php`. This will execute different versions of PHP depending where you are on the filesystem.
 
 For example if you created `/home/group2/www/project-b/php54` then running `php` inside any sub directory of `/home/group2/www/project-b` will execute `/usr/bin/php54/php` (as that is the path to the 5.4 executable defined in this script).
